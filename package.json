@@ -1,0 +1,76 @@
+{
+  "name": "antd-intellisense",
+  "displayName": "IntelliSense for antd design of react",
+  "description": "IntelliSense for antd design of react",
+  "version": "0.0.2",
+  "publisher": "bauhaus",
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "keywords": [
+    "antd",
+    "react"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "html-css-class-completion.cache",
+        "title": "Cache CSS class definitions"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "CSS Class Completion",
+        "properties": {
+          "html-css-class-completion.includeGlobPattern": {
+            "type": "string",
+            "default": "**/*.{css,html}",
+            "description": "A glob pattern that defines files and folders to search for. The glob pattern will be matched against the paths of resulting matches relative to their workspace."
+          },
+          "html-css-class-completion.excludeGlobPattern": {
+            "type": "string",
+            "default": "",
+            "description": "A glob pattern that defines files and folders to exclude. The glob pattern will be matched against the file paths of resulting matches relative to their workspace."
+          },
+          "html-css-class-completion.enableEmmetSupport": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enables completion when you're writing Emmet abbreviations."
+          }
+        }
+      }
+    ]
+  },
+  "icon": "images/icon.png",
+  "repository": {
+    "url": "https://github.com/Zignd/HTML-CSS-Class-Completion"
+  },
+  "main": "./out/src/extension",
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.6",
+    "tslint": "^5.8.0",
+    "@types/node": "^7.0.43",
+    "@types/mocha": "^2.2.42"
+  },
+  "dependencies": {
+    "mocha": "^4.0.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "source-map-support": "^0.5.3",
+    "typescript": "^2.6.1",
+    "verror": "^1.10.0",
+    "vscode": "^1.1.6"
+  }
+}
