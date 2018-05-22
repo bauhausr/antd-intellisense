@@ -22,7 +22,7 @@
     "contributes": {},
     "icon": "images/icon.png",
     "repository": {
-        "url": ""
+        "url": "https://github.com/bauhausr/antd-intellisense"
     },
     "main": "./out/src/extension",
     "scripts": {
