@@ -2,7 +2,7 @@
     "name": "antd-intellisense",
     "displayName": "antd intellisense",
     "description": "IntelliSense for antd's react component",
-    "version": "0.0.5",
+    "version": "0.0.8",
     "publisher": "bauhaus",
     "engines": {
         "vscode": "^1.19.0"
