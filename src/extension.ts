@@ -7,7 +7,7 @@ import {
 } from 'vscode';
 import components from './params';
 
-const completionTriggerChars = ['"', "'", " ", "\n"];
+const completionTriggerChars = [" ", "\n"];
 
 export function activate(context: ExtensionContext) {
 
